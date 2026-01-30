@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js">
+    </script> 
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+  
+
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/WhatsApp Image 2026-01-30 at 7.14.27 PM.jpeg" type="image" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Shadow Shades</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <div class="blob-animate"></div>
+
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+        <img src="assets/img/logo.png" alt="Logo">
+        </a>
+
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li>
+              <a href="#about" class="nav__link">About Us</a>
+            </li>
+            <li>
+              <a href="#projects" class="nav__link">Our Works</a>
+            </li>
+            <li>
+              <a href="#shades" class="nav__link">Our Services</a>
+            </li>
+            <li>
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!-- CUSTOM CURSOR -->
+       <div class="cursor"></div>
+
+      <!--==================== HOME ====================-->
+      <section class="home section">
+        <div class="home__shadow"></div>
+
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h3 class="home__greeting">Hello, We,re</h3>
+            <h1 class="home__name">
+              Shadow <br />
+              Shades
+            </h1>
+          </div>
+
+          <div class="home__image">
+            <div class="blob-animate"></div>
+            <img
+              src="assets/img/home-perfil.png"
+              alt="image"
+              class="home__prefil"
+            />
+          </div>
+
+          <div class="home__info">
+            <h3 class="home__split">Professional</h3>
+            <h2 class="home__profession-1">Makeup</h2>
+            <h2 class="home__profession-2">Artist</h2>
+          </div>
+          <div class="home__social">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="ri-facebook-box-line"></i>
+            </a>
+
+            <a
+              href="https://www.whatsapp.com/"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="ri-whatsapp-line"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="ri-instagram-line"></i>
+            </a>
+
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="ri-youtube-line"></i>
+            </a>
+          </div>
+          <a href="https://www.whatsapp.com/" target="_blank" class="home__cv">
+            Contact Us <i class="ri-contacts-book-3-line"></i>
+          </a>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <div class="about__shadow"></div>
+
+        <div class="about__container container grid">
+          <div class="about__data">
+            <h2 class="section__title">
+              <span>Creativity</span> <br />
+              Is My Passion
+            </h2>
+            <p class="about__description">
+              I’m a <b>Makeup Artist</b> passionate about experimenting with new
+              <b> looks and creative styles</b>. Driven by learning and
+              curiosity, I’m always looking to explore, refine, and master new
+              makeup techniques and trends.
+            </p>
+
+            <a href="https://www.whatsapp.com/" target="_blank" class="button">
+              Contact Us <i class="ri-contacts-book-3-line"></i>
+            </a>
+          </div>
+
+          <div class="about__image">
+            <div class="blob-animate"></div>
+            <div class="blob-animate"></div>
+            <img
+              src="assets/img/about-perfil.png"
+              alt="image"
+              class="about__prefil"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects">
+        <h2 class="section__title">
+          We Make Incredible <br />
+          <span>Works</span>
+        </h2>
+        <div class="project__container container grid">
+          <div class="projects__swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="projects__card swiper-slide">
+                <!-- <div class="blob"></div> -->
+
+                <div class="projects__image">
+                  <img
+                    src="assets/img/projects-1.JPG"
+                    alt="image"
+                    class="projects__img"
+                  />
+                </div>
+              </article>
+
+              <article class="projects__card swiper-slide">
+                <div class="blob"></div>
+
+                <div class="projects__image">
+                  <img
+                    src="assets/img/projects-2.JPG"
+                    alt="image"
+                    class="projects__img"
+                  />
+                  <div class="projects__glass"></div>
+                </div>
+              </article>
+
+              <article class="projects__card swiper-slide">
+                <div class="blob"></div>
+
+                <div class="projects__image">
+                  <img
+                    src="assets/img/projects-3.JPG"
+                    alt="image"
+                    class="projects__img"
+                  />
+                </div>
+              </article>
+
+              <article class="projects__card swiper-slide">
+                <div class="blob"></div>
+
+                <div class="projects__image">
+                  <img
+                    src="assets/img/projects-4.JPG"
+                    alt="image"
+                    class="projects__img"
+                  />
+                </div>
+              </article>
+
+              <article class="projects__card swiper-slide">
+                <div class="blob"></div>
+
+                <div class="projects__image">
+                  <img
+                    src="assets/img/projects-5.JPG"
+                    alt="image"
+                    class="projects__img"
+                  />
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <!--==================== SERVICES ====================-->
+<section class="shades section" id="shades">
+  <div class="container shades__container grid">
+
+    <!-- LEFT SCROLLING CONTENT -->
+    <div class="shades__content">
+      <h2 class="section__title">
+        SHADOW SHADES ❤️ <br />
+        <span>Shades that shine</span>
+      </h2>
+
+      <div class="shades__box">
+        <h3>STARTER</h3>
+        <ul>
+          <li>Glam makeup</li>
+          <li>Hairdo</li>
+          <li>Saree pre-pleating + draping</li>
+        </ul>
+      </div>
+
+      <div class="shades__box">
+        <h3>PREMIUM</h3>
+        <ul>
+          <li>HD / Glass finish makeup</li>
+          <li>Saree pre-pleating + draping</li>
+          <li>Hairdo</li>
+        </ul>
+      </div>
+
+      <div class="shades__box">
+        <h3>ELITE</h3>
+        <ul>
+          <li>Ultra HD bridal makeup</li>
+          <li>Hairstyling + Fresh flowers</li>
+          <li>Saree pre-pleating + draping</li>
+        </ul>
+      </div>
+
+      <div class="shades__box">
+        <h3>AIR BRUSH</h3>
+        <ul>
+          <li>Semi-matt airbrush</li>
+          <li>Temptu airbrush system</li>
+        </ul>
+      </div>
+
+      <div class="shades__box">
+        <h3>BRIDESMAIDS</h3>
+        <ul>
+          <li>Subtle makeup</li>
+          <li>Hairdo only</li>
+        </ul>
+      </div>
+
+      <div class="shades__box">
+        <h3>GROOM</h3>
+        <ul>
+          <li>Matte HD makeover</li>
+          <li>Hairdo + Lens</li>
+        </ul>
+      </div>
+
+      <div class="shades__terms">
+        <h4>Terms & Conditions</h4>
+        <ul>
+          <li>Advance is non-refundable</li>
+          <li>Extra charges for last-minute location changes</li>
+          <li>Payment before makeup starts</li>
+          <li>Damages to rentals will be charged</li>
+          <li>Inform allergies beforehand</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- RIGHT PINNED IMAGE -->
+    <div class="shades__image">
+      <img src="assets/img/home-perfil.png" alt="Bridal Makeup" />
+    </div>
+
+  </div>
+</section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <div class="contact__container container grid">
+          <div class="contact__data">
+            <h2 class="section__title">Contact Us</h2>
+
+            <p class="contact__description">Tell me about your next makeup look.</p>
+
+            <button class="contact__button button" id="contact-btn">
+              Copy email <i class="ri-file-copy-2-line"></i>
+              <span class="contact__email" id="contact-email">abc@gmail.com</span>
+            </button>
+
+          </div>
+
+          <div class="contact__content grid">
+            <div class="contact__info grid">
+              <div class="contact__title">Email</div>
+              <address class="contact__address">abc@gmail.com</address>
+              
+              <div class="contact__title">Location</div>
+              <address class="contact__address">Chennai</address>
+            </div>
+
+            <div class="contact__social">
+              <h3 class="contact__title">Social Media</h3>
+              <div class="contact__links">
+                <a href="https://www.facebook.com/" target="_blank" class="contact__link">
+                 facebook 
+                 <i class="ri-arrow-right-up-line"></i>
+                </a>
+                <a href="https://www.instagram.com/"target="_blank"  class="contact__link">
+                  Instagram
+                  <i class="ri-arrow-right-up-line"></i>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank" class="contact__link">
+                 Youtube 
+                 <i class="ri-arrow-right-up-line"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="contact__write">
+              <h3 class="contact__title">Write Me & We'll Talk</h3>
+
+              <div class="contact__links">
+                       <a href="https://www.facebook.com/" target="_blank" class="contact__link">
+                 Messenger
+                 <i class="ri-arrow-right-up-line"></i>
+                </a>
+                <a href="https://www.whatsapp.com/" target="_blank" class="contact__link">
+                  whatsapp
+                  <i class="ri-arrow-right-up-line"></i>
+                </a>
+                <a href="https://www.instagram.com/"target="_blank"  class="contact__link">
+                  Instagram
+                  <i class="ri-arrow-right-up-line"></i>
+                </a>
+                <a href="https://t.me/telegram" target="_blank" class="contact__link">
+                  Telegram 
+                 <i class="ri-arrow-right-up-line"></i>
+                </a>
+               </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer grid">
+      <div class="blob-animate"></div>
+
+      <div class="footer__copy">
+        Developed By <span class="haki">Hakiwave</span>
+      </div>
+      <div class="footer__year">  
+        &#169; <span id="footer__year"></span>
+      </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== ANIME JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/animejs/dist/bundles/anime.umd.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
