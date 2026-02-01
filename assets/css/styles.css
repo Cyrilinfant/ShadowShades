@@ -429,6 +429,7 @@ img {
 .about__description{
   font-size: var(--h2-font-size);
   margin-bottom: 2rem;
+  line-height: 1.4rem;
 }
 
 .about__description b{
@@ -466,7 +467,7 @@ img {
 
 /*=============== PROJECTS ===============*/
 
-/* .projects .section__title{
+ .projects .section__title{
   text-align: initial;
   margin-left: 1.5rem;
 }
@@ -483,7 +484,7 @@ img {
   z-index: 0;
   right: -7.75rem;
   /* bottom: 0; */
-/* } */
+}
 
 .projects__number , .projects__data , .projects__image{
   position: relative;
@@ -604,6 +605,7 @@ img {
 .shades__container{
   grid-template-columns: 1fr;
   gap: 3rem;
+  
 }
 
 @media screen and (min-width: 1150px){
@@ -644,12 +646,14 @@ img {
 .shades__image{
   position: relative;
   height: 100%;
+ 
 }
 
 .shades__image img{
   width: 100%;
   border-radius: 3rem;
   box-shadow: 0 40px 80px rgba(0,0,0,.5);
+ 
 }
 
 
