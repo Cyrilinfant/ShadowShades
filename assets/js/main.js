@@ -154,7 +154,6 @@ sr.reveal('.home__info', { delay: 1200, origin: 'bottom' })
 sr.reveal('.home__social , .home__cv', { delay: 1500})
 sr.reveal('.about__data' ,{origin:'left'})
 
-/*=============== GSAP PINNED IMAGE (SHADOW SHADES) ===============*/
 
 /*=============== SHADES (DESKTOP ONLY) ===============*/
 gsap.registerPlugin(ScrollTrigger);
@@ -171,8 +170,6 @@ ScrollTrigger.matchMedia({
     });
 
   }
-});
-
 });
 
 /* Smooth GSAP reveal for Shades (no conflict with ScrollReveal) */
