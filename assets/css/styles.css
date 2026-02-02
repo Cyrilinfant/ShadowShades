@@ -963,7 +963,7 @@ img {
 
 
 /* For medium devices */
-@media screen and (max-width :540px){
+@media screen and (min-width :540px){
   .home__container{
     width: 460px;
     margin-inline:auto;
