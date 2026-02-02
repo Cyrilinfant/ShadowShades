@@ -148,7 +148,7 @@ const sr = ScrollReveal({
   reset: true
 })
 
-sr.reveal('.home__image , .project__container , .testimonials__container , .contact__container ,footer')
+sr.reveal('.home__image , .project__container , .testimonials__container , .contact__container')
 sr.reveal('.home__data', { delay: 900, origin: 'bottom' })
 sr.reveal('.home__info', { delay: 1200, origin: 'bottom' })
 sr.reveal('.home__social , .home__cv', { delay: 1500})
@@ -156,14 +156,89 @@ sr.reveal('.about__data' ,{origin:'left'})
 
 /*=============== GSAP PINNED IMAGE (SHADOW SHADES) ===============*/
 
+/*=============== SHADES (DESKTOP ONLY) ===============*/
 gsap.registerPlugin(ScrollTrigger);
 
-ScrollTrigger.create({
-  trigger: ".shades",
-  start: "top top",
-  end: "bottom bottom",
-  pin: ".shades__image",
-  pinSpacing: true
+/* Pin image ONLY on desktop */
+ScrollTrigger.matchMedia({
+
+  "(min-width: 1150px)": function () {
+
+    ScrollTrigger.create({
+      trigger: ".shades",
+      start: "top top",
+      end: "bottom bottom",
+      pin: ".shades__image",
+      pinSpacing: ture
+    });
+
+  }
+
 });
+
+/* Smooth GSAP reveal for Shades (no conflict with ScrollReveal) */
+gsap.from(".shades__box, .shades__terms", {
+  scrollTrigger: {
+    trigger: ".shades__content",
+    start: "top 80%",
+  },
+  y: 40,
+  opacity: 0,
+  duration: 0.8,
+  stagger: 0.15,
+  ease: "power3.out"
+});
+
+gsap.from(".shades .section__title", {
+  scrollTrigger: {
+    trigger: ".shades",
+    start: "top 85%",
+  },
+  y: 30,
+  opacity: 0,
+  duration: 0.8,
+  ease: "power2.out"
+});
+
+/*=============== MOBILE NAV TOGGLE ===============*/
+/*=============== MOBILE NAV TOGGLE WITH CLOSE ICON ===============*/
+/*=============== MOBILE NAV MENU (FINAL) ===============*/
+const navToggle = document.getElementById('nav-toggle')
+const navMenu = document.getElementById('nav-menu')
+const navLinks = document.querySelectorAll('.nav__link')
+const navOverlay = document.getElementById('nav-overlay')
+
+navToggle.addEventListener('click', () => {
+  const isOpen = navMenu.classList.toggle('show-menu')
+
+  navToggle.classList.toggle('active', isOpen)
+  navOverlay.classList.toggle('show-overlay', isOpen)
+
+  // ☰ ↔ ✖ icon switch
+  navToggle.innerHTML = isOpen
+    ? '<i class="ri-close-line"></i>'
+    : '<i class="ri-menu-3-line"></i>'
+})
+
+/* Close menu when clicking a nav link */
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    closeMenu()
+  })
+})
+
+/* Close menu when clicking overlay */
+navOverlay.addEventListener('click', closeMenu)
+
+function closeMenu(){
+  navMenu.classList.remove('show-menu')
+  navOverlay.classList.remove('show-overlay')
+  navToggle.classList.remove('active')
+  navToggle.innerHTML = '<i class="ri-menu-3-line"></i>'
+}
+
+
+
+
 
 

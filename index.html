@@ -32,31 +32,33 @@
   <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
-      <div class="blob-animate"></div>
+  <div class="blob-animate"></div>
+  <div class="nav__overlay" id="nav-overlay"></div>
 
-      <nav class="nav container">
-        <a href="#" class="nav__logo">
-        <img src="assets/img/logo.png" alt="Logo">
-        </a>
 
-        <div class="nav__menu">
-          <ul class="nav__list">
-            <li>
-              <a href="#about" class="nav__link">About Us</a>
-            </li>
-            <li>
-              <a href="#projects" class="nav__link">Our Works</a>
-            </li>
-            <li>
-              <a href="#shades" class="nav__link">Our Services</a>
-            </li>
-            <li>
-              <a href="#contact" class="nav__link">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+  <nav class="nav container">
+    <!-- Logo -->
+    <a href="#" class="nav__logo">
+      <img class="logo__img" src="assets/img/logo.png" alt="Logo">
+    </a>
+
+    <!-- Nav menu -->
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list">
+        <li><a href="#about" class="nav__link">About Us</a></li>
+        <li><a href="#projects" class="nav__link">Our Works</a></li>
+        <li><a href="#shades" class="nav__link">Our Services</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Mobile toggle (RIGHT SIDE) -->
+    <div class="nav__toggle" id="nav-toggle">
+      <i class="ri-menu-3-line"></i>
+    </div>
+  </nav>
+</header>
+
 
     <!--==================== MAIN ====================-->
     <main class="main">
