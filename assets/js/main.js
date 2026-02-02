@@ -159,9 +159,7 @@ sr.reveal('.about__data' ,{origin:'left'})
 /*=============== SHADES (DESKTOP ONLY) ===============*/
 gsap.registerPlugin(ScrollTrigger);
 
-/* Pin image ONLY on desktop */
 ScrollTrigger.matchMedia({
-
   "(min-width: 1150px)": function () {
 
     ScrollTrigger.create({
@@ -169,10 +167,11 @@ ScrollTrigger.matchMedia({
       start: "top top",
       end: "bottom bottom",
       pin: ".shades__image",
-      pinSpacing: ture
+      pinSpacing: true
     });
 
   }
+});
 
 });
 
